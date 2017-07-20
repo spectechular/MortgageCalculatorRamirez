@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mike.mortgagecalculatorramirez.MainActivity">
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- Years Table Row Radio Buttons !-->
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:padding="10dp"
+                android:text="@string/label_years" />
+
+            <RadioGroup
+                android:id="@+id/radid_years"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+
+                <RadioButton
+                    android:id="@+id/ten_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10" />
+
+                <RadioButton
+                    android:id="@+id/fifteen_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15" />
+
+                <RadioButton
+                    android:id="@+id/thirty_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="30" />
+
+            </RadioGroup>
+        </TableRow>
+
+        <!-- Financed Amount Table Row !-->
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="10dp"
+                android:text="@string/label_amount" />
+
+            <EditText
+                android:id="@+id/data_mortgage_amount_edit_text"
+                android:text="100000" />
+
+        </TableRow>
+
+        <!-- Interest Rate Table Row !-->
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:padding="10dp"
+                android:text="@string/label_rate" />
+
+            <EditText
+
+                android:id="@+id/data_rate_edit_text"
+                android:text="0.035" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="50dp">
+
+            <Button
+                android:layout_column="2"
+                android:gravity="center"
+                android:onClick="goBack"
+                android:text="Done" />
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

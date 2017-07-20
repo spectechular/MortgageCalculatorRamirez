@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mike.mortgagecalculatorramirez.MainActivity">
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <!-- Financed Amount Table Row !-->
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="10dp"
+                android:text="@string/label_amount" />
+
+            <TextView
+                android:id="@+id/mortgage_amount_text_view"
+                android:hint="@string/amount" />
+
+        </TableRow>
+
+        <!-- Years Table Row !-->
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:padding="10dp"
+                android:text="@string/label_years" />
+
+            <TextView
+
+                android:id="@+id/years_text_view"
+                android:text="@string/years" />
+        </TableRow>
+
+        <!-- Interest Rate Table Row !-->
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:padding="10dp"
+                android:text="@string/label_rate" />
+
+            <TextView
+
+                android:id="@+id/rate_text_view"
+                android:text="@string/rate" />
+        </TableRow>
+
+        <View
+            android:layout_height="5dp"
+            android:background="@color/colorAccent" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:padding="10dp"
+                android:text="@string/label_monthly_payment" />
+
+            <TextView
+
+                android:id="@+id/monthly_payment_text_view"
+                android:text="@string/monthly_payment" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:padding="10dp"
+                android:text="@string/label_total_payment" />
+
+            <TextView
+
+                android:id="@+id/total_payment_text_view"
+                android:text="@string/total_payment" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="50dp">
+
+            <Button
+                android:layout_column="2"
+                android:gravity="center"
+                android:onClick="modifyData"
+                android:text="@string/modify_data" />
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
